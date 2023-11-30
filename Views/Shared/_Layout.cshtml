@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - proyectoAplicada</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
     <link rel="stylesheet" href="~/proyectoAplicada.styles.css" asp-append-version="true" />
 </head>
 <body>
@@ -43,6 +44,19 @@
         </nav>
     </header>
     <div class="container-fluid w-100">
+        <div class="color-virtualStep col-1">
+            <ul class="navbar-nav flex-grow-1">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Bill"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Sale">Venta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Inventory">Inventario</a>
+                </li>
+            </ul>
+        </div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
