@@ -33,6 +33,21 @@ namespace proyectoAplicada.Controllers
             return View();
         }
 
+        public IActionResult Inventory()
+        {
+            return View();
+        }
+
+        public IActionResult Bill()
+        {
+            return View();
+        }
+
+        public IActionResult Sale()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
