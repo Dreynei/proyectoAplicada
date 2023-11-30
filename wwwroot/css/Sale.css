@@ -5,6 +5,8 @@
     height: 80vh !important;
 }
 
-.color-virtualStep {
-    background-color: rgba(79, 122, 166, 0.85);
+.color-virtualStep-sale {
+    background-color: rgba(79, 122, 166, 0.6);
 }
+
+

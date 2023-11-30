@@ -44,25 +44,29 @@
         </nav>
     </header>
     <div class="container-fluid w-100">
-        <div class="color-virtualStep col-1">
-            <ul class="navbar-nav flex-grow-1">
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Bill"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Sale">Venta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Inventory">Inventario</a>
-                </li>
-            </ul>
+        <div class="row">
+            <div class="color-virtualStep col col-1">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Bill">Pagos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Sale">Ventas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Inventory">Inventario</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col justify-content-center">
+                <main role="main" class="col col-10">
+                    @RenderBody()
+                </main>
+            </div>
         </div>
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted bg-light">
         <div class="container">
             &copy; 2023 - proyectoAplicada - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
