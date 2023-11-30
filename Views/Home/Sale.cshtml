@@ -1,5 +1,67 @@
-﻿<link rel="stylesheet" href="~/css/Inventory.css" asp-append-version="true" />
+﻿<link rel="stylesheet" href="~/css/Sale.css" asp-append-version="true" />
+<div class="container center-div ">
+    <div class="row justify-content-center color-virtualStep border rounded p-3">
+        <h3>Ventas</h3>
+        <form>
+            <div class="row col-5">
+                <label for="cedula" class="form-label m-0 p-0">Cedula de cliente</label>
+                <input class="form-control" list="cedulaOptions" id="cedula" placeholder="Escriba para buscar...">
+                <datalist id="cedulaOptions">
+                    <option value="San Francisco" />
+                    <option value="New York" />
+                    <option value="Seattle" />
+                    <option value="Los Angeles" />
+                    <option value="Chicago" />
+                </datalist>
+            </div>
+            <div class="row justify-content-between col-9">
+                <div class="col-5 m-0 p-0">
+                    <label for="product" class="form-label">Producto</label>
+                    <input class="form-control" list="productOptions" id="product" placeholder="Escriba para buscar...">
+                    <datalist id="productOptions">
+                        <option value="San Francisco" />
+                        <option value="New York" />
+                        <option value="Seattle" />
+                        <option value="Los Angeles" />
+                        <option value="Chicago" />
+                    </datalist>
+                </div>
+                <div class="col-2 m-0 p-0 ">
+                    <label for="cuantity" class="form-label">Cantidad</label>
+                    <input class="form-control" id="cuantity" type="number" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 m-0 p-0">
+                    <button class="form-control btn-primary ">Agregar</button>
+                </div>
+                <div class="col-5">
+                    <table class="table table-light table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="justify-content-center">Leche</td>
+                                <td class="d-flex justify-content-center">3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-<h1>Holaaaaa</h1>
+            <div class="row">
+                <label for="product" class="form-label">Datalist example</label>
+                <input type="number" class="form-control" id="pay" placeholder="Precio">
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
 
 
