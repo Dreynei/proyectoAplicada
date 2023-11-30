@@ -23,10 +23,10 @@
                         <option value="Chicago" />
                     </datalist>
                 </div>
-                <div>
+                <div class="col-2 m-0 p-0 ms-2 mt-4">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Launch demo modal
+                        Agregar cliente
                     </button>
                 </div>
             </div>
@@ -86,9 +86,9 @@
 
     </div>
 
-</div
+</div>
 
-!-- Modal -->
+<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -99,14 +99,30 @@
             <div class="modal-body">
                 <div class="container">
                     <div class="row">
-                        <label for="product" class="form-label">Producto</label>
-                    <input class="form-control" list="productOptions" id="product" placeholder="Escriba para buscar...">
+                        <label for="clientID" class="form-label">cedula cliente</label>
+                        <input type="text" class="form-control" id="clientID" placeholder="Cedula de cliente">
+                    </div>
+                    <div class="row">
+                        <label for="clientName" class="form-label">Nombre cliente</label>
+                        <input type="text" class="form-control" id="clientName" placeholder="Nombre de cliente">
+                    </div>
+                    <div class="row">
+                        <label for="clientLastName" class="form-label">Apellido Cliente</label>
+                        <input type="text" class="form-control" id="clientLastName" placeholder="Apellido de cliente">
+                    </div>
+                    <div class="row">
+                        <label for="clientPhone" class="form-label">Edad Cliente</label>
+                        <input type="text" class="form-control" id="clientPhone" placeholder="Telefono de cliente">
+                    </div>
+                    <div class="row">
+                        <label for="clientEmail" class="form-label">Correo Cliente</label>
+                        <input type="email" class="form-control" id="clientEmail" placeholder="Correo de cliente">
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agregar</button>
             </div>
         </div>
     </div>
