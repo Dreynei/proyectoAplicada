@@ -20,14 +20,20 @@ html {
 body {
   margin-bottom: 60px;
 }
+body {
+    background-image: url("../img/BannerVirtualStep.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh !important;
+}
 
-.bg-img {
+/*.bg-img {
     background-image: url("../img/BannerVirtualStep.png");
     background-repeat: no-repeat;
 
     background-size: cover;
     height: 80vh !important;
-}
+}*/
 
 .center-div{
     display:flex;
@@ -37,4 +43,16 @@ body {
 
 .color-virtualStep {
     background-color: #4F7AA6;
+}
+
+.icon_size {
+    width: 32px;
+    height: 32px;
+}
+.icon_size_logo {
+    width: 70px;
+    height: 70px;
+}
+.color-virtualStep-sale {
+    background-color: rgba(79, 122, 166, 0.6);
 }

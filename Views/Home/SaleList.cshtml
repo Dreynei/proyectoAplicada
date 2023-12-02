@@ -7,6 +7,9 @@
         <div class="col col-2">
             <button class="form-control btn-info"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Sale">volver</a></button>
         </div>
+        <div class="col-3">
+            <button onclick="imprimirPagina()" class="btn btn-primary w-50 h-100 fw-bold">Reporte</button>
+        </div>
     </div>
 
     <div class="row d-flex justify-content-center align-content-center color-virtualStep-sale border rounded p-3">
@@ -24,9 +27,13 @@
             </thead>
             <tbody>
                 <tr>
-                    <td class="justify-content-center">cliente</td>
-                    <td class="justify-content-center">Leche</td>
-                    <td class="d-flex justify-content-center">3</td>
+                    <td class="justify-content-center">Juan</td>
+                    <td class="justify-content-center">Camisa</td>
+                    <td class=" justify-content-center">3</td>
+                    <td class=" justify-content-center">15 000</td>
+                    <td class=" justify-content-center">24/02/2023</td>
+                    <td class="justify-content-center"> <button class="border-0 bg-transparent"><img class="icon_size" src="~/img/edit.png" alt="Edit Icon"></button></td>
+                    <td class="justify-content-center"><button class="border-0 bg-transparent"><img class="icon_size" src="~/img/delete.png" alt="Delete Icon"></button></td>
                 </tr>
             </tbody>
         </table>

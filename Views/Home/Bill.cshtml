@@ -1,5 +1,5 @@
 ﻿    <link rel="stylesheet" href="~/css/Bill.css" asp-append-version="true" />
-    <div class="container-fluid m-0 p-3">
+<div class="container-fluid m-0 p-3 color-virtualStep-sale">
         <h1>Pagos</h1>
         <div class="horizontal_bar mb-3"></div>
         <div class="container m-0 p-0 w-100">
@@ -36,9 +36,12 @@
                     <div class="col-6">
                         <input class="form-control" id="searchName" type="text" placeholder="Ingrese el nombre a buscar" />
                     </div>
-                    <div class="col-6">
+                    <div class="col-3">
                         <button type="submit" class="btn btn-primary w-50 h-100 fw-bold">Buscar</button>
                     </div>
+                <div class="col-3">
+                    <button onclick="imprimirPagina()" class="btn btn-primary w-50 h-100 fw-bold">Reporte</button>
+                </div>
                 </div>
             </form>
         </div>
