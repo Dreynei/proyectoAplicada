@@ -1,5 +1,131 @@
-﻿<link rel="stylesheet" href="~/css/Inventory.css" asp-append-version="true" />
+﻿<link rel="stylesheet" href="~/css/Sale.css" asp-append-version="true" />
+<div class="container">
+    <div class="row d-flex justify-content-center align-content-center color-virtualStep-sale border rounded p-3">
+        <div class="row">
+            <div class="col">
 
-<h1>Holaaaaa</h1>
+                <h3>Ventas</h3>
+            </div>
+            <div class="col col-3">
+                <button class="form-control btn-info"><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="SaleList">Lista de ventas</a></button>
+            </div>
+        </div>
+        <form class="ms-5">
+            <div class="row">
+                <div class="col-5 m-0 p-0">
+                    <label for="cedula" class="form-label m-0 p-0">Cedula de cliente</label>
+                    <input class="form-control" list="cedulaOptions" id="cedula" placeholder="Escriba para buscar...">
+                    <datalist id="cedulaOptions">
+                        <option value="San Francisco" />
+                        <option value="New York" />
+                        <option value="Seattle" />
+                        <option value="Los Angeles" />
+                        <option value="Chicago" />
+                    </datalist>
+                </div>
+                <div class="col-2 m-0 p-0 ms-2 mt-4">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agregar cliente
+                    </button>
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-5 m-0 p-0">
+                    <label for="product" class="form-label">Producto</label>
+                    <input class="form-control" list="productOptions" id="product" placeholder="Escriba para buscar...">
+                    <datalist id="productOptions">
+                        <option value="San Francisco" />
+                        <option value="New York" />
+                        <option value="Seattle" />
+                        <option value="Los Angeles" />
+                        <option value="Chicago" />
+                    </datalist>
+                </div>
+                <div class="col-2 m-0 p-0 ms-2">
+                    <label for="cuantity" class="form-label">Cantidad</label>
+                    <input class="form-control" id="cuantity" type="number" />
+                </div>
+            </div>
+            <div class="row mb-1">
+                <div class="col-5 m-0 p-0">
+                    <button class="form-control btn-secondary ">Agregar</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 m-0 p-0">
+                    <table class="table table-light table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="justify-content-center">Leche</td>
+                                <td class="d-flex justify-content-center">3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col-5 m-0 p-0">
+                    <h4 id="salesTotal">Total:10</h4>
+                </div>
+
+            </div>
+            <div class="row mb-1">
+                <div class="col-5 m-0 p-0">
+                    <button class="form-control btn-primary">Realizar Venta</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Agregar Cliente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <label for="clientID" class="form-label">cedula cliente</label>
+                        <input type="text" class="form-control" id="clientID" placeholder="Cedula de cliente">
+                    </div>
+                    <div class="row">
+                        <label for="clientName" class="form-label">Nombre cliente</label>
+                        <input type="text" class="form-control" id="clientName" placeholder="Nombre de cliente">
+                    </div>
+                    <div class="row">
+                        <label for="clientLastName" class="form-label">Apellido Cliente</label>
+                        <input type="text" class="form-control" id="clientLastName" placeholder="Apellido de cliente">
+                    </div>
+                    <div class="row">
+                        <label for="clientPhone" class="form-label">Edad Cliente</label>
+                        <input type="text" class="form-control" id="clientPhone" placeholder="Telefono de cliente">
+                    </div>
+                    <div class="row">
+                        <label for="clientEmail" class="form-label">Correo Cliente</label>
+                        <input type="email" class="form-control" id="clientEmail" placeholder="Correo de cliente">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Agregar</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 

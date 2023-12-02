@@ -1,0 +1,22 @@
+﻿body {
+    background-image: url("../img/BannerVirtualStep.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh !important;
+}
+
+.color-virtualStep-sale {
+    background-color: rgba(79, 122, 166, 0.6);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Quitar botones de input number para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
